@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400, initial-scale=1.0">
+    <title>Pokemon Data Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script defer src="dashboard.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pokemon Data Dashboard</h1>
+    </header>
+    <main id="main-layout">
+    <section id="control-panel">
+            <h2>Control Panel</h2>
+            <label for="dataset-select">Dataset:</label>
+            <select id="dataset-select">
+                <option value="penguins_cleaned.csv">Penguins Cleaned</option>
+                <option value="Pokemon.csv">Pokemon</option>
+            </select>
+            <br>
+            <label for="x-attr-select">X Attribute:</label>
+            <select id="x-attr-select"></select>
+            <br>
+            <label for="y-attr-select">Y Attribute:</label>
+            <select id="y-attr-select"></select>
+            <br>
+            <label for="color-select">Color:</label>
+            <select id="color-select"></select>
+            <br>
+            <label for="boxplot-select">Boxplot:</label>
+            <select id="boxplot-select"></select>
+        </section>
+        <section id="scatter-and-box-panel">
+            <h2>Scatter Plot</h2>
+            <div id="scatter-plot"></div>
+            <div id="color-key"></div>
+            <div id="selection-info"></div>
+            <h2 style="margin-top:32px;">Box Plot</h2>
+            <div id="box-plot"></div>
+        </section>
+    </main>
+</body>
+</html>

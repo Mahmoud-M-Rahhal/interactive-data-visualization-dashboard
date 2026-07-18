@@ -1,0 +1,145 @@
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #f7f7fa;
+	margin: 0;
+	padding: 0;
+	color: #222;
+}
+
+header {
+	background: none;
+	color: #111;
+	padding: 24px 0 12px 0;
+	text-align: center;
+	box-shadow: none;
+}
+
+header h1 {
+	margin: 0 0 8px 0;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+	color: #111;
+}
+
+.header-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+	margin-top: 2px;
+	font-size: 1.1rem;
+	color: #111;
+}
+.header-info strong {
+	color: #111;
+}
+.header-sep {
+	color: #888;
+	margin: 0 8px;
+}
+
+#main-layout {
+	display: grid;
+	grid-template-columns: 340px 1fr;
+	align-items: flex-start;
+	gap: 16px;
+	max-width: 1800px;
+	margin: 32px auto 0 auto;
+	padding: 0 16px 32px 16px;
+	min-height: 80vh;
+#control-panel {
+	min-width: 260px;
+	max-width: 340px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 0;
+}
+}
+
+#control-panel, #scatter-and-box-panel {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+	padding: 32px 32px 32px 32px;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+#control-panel {
+	min-width: 260px;
+	max-width: 340px;
+	align-items: flex-start;
+}
+
+/* Updated for vertical layout: */
+#control-panel h2, #scatter-and-box-panel h2 {
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-size: 1.3rem;
+	color: #2d3e50;
+	letter-spacing: 0.5px;
+}
+
+#control-panel label {
+	margin-top: 12px;
+	font-weight: 500;
+	color: #444;
+}
+
+#control-panel select {
+	margin-top: 4px;
+	margin-bottom: 8px;
+	padding: 6px 10px;
+	border-radius: 6px;
+	border: 1px solid #bfc7d1;
+	font-size: 1rem;
+	background: #f5f7fa;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#scatter-and-box-panel {
+	align-items: center;
+	justify-content: center;
+}
+
+#scatter-plot, #box-plot {
+	width: 950px;
+	min-height: 650px;
+	height: 650px;
+	margin: 18px auto 0 auto;
+	background: #f9fafb;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#color-key {
+	margin-top: 16px;
+	min-height: 32px;
+}
+
+#selection-info {
+	margin-top: 10px;
+	font-size: 1.05rem;
+	color: #2d3e50;
+	font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+	#main-layout {
+		grid-template-columns: 1fr;
+		gap: 18px;
+	}
+	#control-panel, #scatter-and-box-panel {
+		max-width: 100%;
+	}
+}
